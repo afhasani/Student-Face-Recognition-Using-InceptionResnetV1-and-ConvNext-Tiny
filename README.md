@@ -2,6 +2,11 @@
 
 Repositori ini mendokumentasikan pengembangan dan evaluasi sistem absensi biometrik menggunakan pendekatan *Few-Shot Learning*. Fokus utama penelitian ini adalah membandingkan kinerja antara model yang dilatih khusus pada domain wajah (**InceptionResnetV1**) dengan arsitektur CNN modern yang dilatih pada domain objek umum (**ConvNeXt-Tiny**).
 
+## Link Penting
+Demo aplikasi : [Hugging Face Space](https://huggingface.co/spaces/Mowzaaaa/Sistem-Presensi-Mahasiswa-DL).
+Bobot Model InceptionResnetV1: [Model Weight - InceptionResnetV1](https://github.com/afhasani/Student-Face-Recognition-Using-InceptionResnetV1-and-ConvNext-Tiny/releases/download/InceptionResnetV1/best_model_inceptionresnetv1.pth).
+Bobot Model ConvNext Tiny : [Model Weight - ConvNext Tiny](https://github.com/afhasani/Student-Face-Recognition-Using-InceptionResnetV1-and-ConvNext-Tiny/releases/download/ConvNext/best_model_convnext.pth).
+
 ## Ringkasan Proyek
 
 * **Tujuan:** Mengembangkan model pengenalan wajah mahasiswa Deep Learning ITERA yang akurat dengan data latih terbatas (rata-rata 4 citra per individu).
