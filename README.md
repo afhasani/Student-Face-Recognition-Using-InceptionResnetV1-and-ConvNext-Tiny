@@ -1,4 +1,4 @@
-# InceptionResnetV1 dan ConvNext Tiny untuk Sistem Absensi Mahasiswa Deep Learning Berdasarkan Citra Wajah
+# InceptionResnetV1 dan ConvNeXt Tiny untuk Sistem Absensi Mahasiswa Deep Learning Berdasarkan Citra Wajah
 
 Repositori ini mendokumentasikan pengembangan dan evaluasi sistem absensi biometrik menggunakan pendekatan *Few-Shot Learning*. Fokus utama penelitian ini adalah membandingkan kinerja antara model yang dilatih khusus pada domain wajah (**InceptionResnetV1**) dengan arsitektur CNN modern yang dilatih pada domain objek umum (**ConvNeXt-Tiny**).
 
