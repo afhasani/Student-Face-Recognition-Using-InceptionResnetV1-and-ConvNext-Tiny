@@ -1,4 +1,4 @@
-# Analisis Komparatif Model Deep Learning untuk Sistem Absensi Wajah Few-Shot
+# InceptionResnetV1 dan ConvNext Tiny untuk Sistem Absensi Mahasiswa Deep Learning Berdasarkan Citra Wajah
 
 Repositori ini mendokumentasikan pengembangan dan evaluasi sistem absensi biometrik menggunakan pendekatan *Few-Shot Learning*. Fokus utama penelitian ini adalah membandingkan kinerja antara model yang dilatih khusus pada domain wajah (**InceptionResnetV1**) dengan arsitektur CNN modern yang dilatih pada domain objek umum (**ConvNeXt-Tiny**).
 
@@ -13,15 +13,15 @@ Repositori ini mendokumentasikan pengembangan dan evaluasi sistem absensi biomet
 
 ## 📊 Ringkasan Hasil Evaluasi
 
-Berdasarkan pengujian ekstensif menggunakan *Cross Validation*, berikut adalah perbandingan performa rata-rata antar model:
+Berdasarkan pengujian menggunakan *Cross Validation*, berikut adalah perbandingan performa rata-rata antar model:
 
 | Model | Bobot Pre-trained | Akurasi Rata-rata | Macro F1-Score | Keterangan |
 | :--- | :--- | :--- | :--- | :--- |
 | **InceptionResnetV1** | **VGGFace2** | **98.00%** | **0.97** | **Model Terbaik.** Sangat stabil dan akurat. |
-| ConvNeXt-Tiny | ImageNet-1K | 69.00% | 0.66 | Mengalami kesulitan generalisasi pada fitur wajah spesifik. |
+| ConvNeXt-Tiny | ImageNet-1K | 69.00% | 0.66 | Mengalami kesulitan generalisasi. |
 
 ### Analisis Kinerja
-Perbedaan performa yang signifikan (~29%) menunjukkan bahwa untuk kasus *dataset kecil (few-shot)*, **domain pengetahuan awal (pre-trained weights)** memiliki dampak yang jauh lebih besar daripada modernitas arsitektur. InceptionResnetV1 yang telah "melihat" jutaan wajah sebelumnya mampu beradaptasi dengan cepat, sedangkan ConvNeXt kesulitan mempelajari fitur mikro wajah (seperti jarak mata atau bentuk rahang) hanya dari 200-an gambar.
+Perbedaan performa yang signifikan (~29%) menunjukkan bahwa untuk kasus *dataset kecil (few-shot)*, **domain pengetahuan awal (pre-trained weights)** memiliki dampak yang jauh lebih besar daripada modernitas arsitektur. InceptionResnetV1 yang telah dilatih dengan jutaan wajah (vggface2) sebelumnya mampu beradaptasi dengan cepat, sedangkan ConvNeXt kesulitan mempelajari fitur mikro wajah (seperti jarak mata atau bentuk rahang) hanya dari 200-an gambar.
 
 ---
 
@@ -129,6 +129,7 @@ Muhammad Riveldo Hermawan Putra       1.00      1.00      1.00         4
                  hayyatul fajri       1.00      1.00      1.00         4
 
                        accuracy                           0.98       283
+```
 <details>
 
 ### Model 1: InceptionResnetV1 (Akurasi: 98%)
@@ -212,3 +213,4 @@ Muhammad Riveldo Hermawan Putra       1.00      1.00      1.00         4
                        accuracy                           0.69       283
                       macro avg       0.69      0.69      0.66       283
                    weighted avg       0.69      0.69      0.67       283
+```
