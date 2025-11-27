@@ -33,7 +33,7 @@ Bagian ini menampilkan perbandingan kurva pembelajaran dan matriks kebingungan (
 
 | InceptionResnetV1 (VGGFace2) | ConvNeXt-Tiny (ImageNet) |
 | :---: | :---: |
-| ![Loss Acc Inception](images/learning_curve_inception.png) | ![Loss Acc ConvNeXt](images/learning_curve_convnext.png) |
+| ![Loss Acc Inception](images/learning_curve_inceptionresnetv1.png) | ![Loss Acc ConvNeXt](images/learning_curve_convnext.png) |
 | *Konvergensi cepat dan stabil.* | *Indikasi overfitting atau kesulitan konvergensi.* |
 
 ### 2. Confusion Matrix
