@@ -25,7 +25,7 @@ Perbedaan performa yang signifikan (~29%) menunjukkan bahwa untuk kasus *dataset
 
 ---
 
-## 📈 Visualisasi Hasil Pelatihan
+## Visualisasi Hasil Pelatihan
 
 Bagian ini menampilkan perbandingan kurva pembelajaran dan matriks kebingungan (*confusion matrix*) untuk menganalisis stabilitas dan distribusi kesalahan model.
 
@@ -33,19 +33,19 @@ Bagian ini menampilkan perbandingan kurva pembelajaran dan matriks kebingungan (
 
 | InceptionResnetV1 (VGGFace2) | ConvNeXt-Tiny (ImageNet) |
 | :---: | :---: |
-| ![Loss Acc Inception](docs/images/learning_curve_inception.png) | ![Loss Acc ConvNeXt](docs/images/learning_curve_convnext.png) |
+| ![Loss Acc Inception](images/learning_curve_inception.png) | ![Loss Acc ConvNeXt](images/learning_curve_convnext.png) |
 | *Konvergensi cepat dan stabil.* | *Indikasi overfitting atau kesulitan konvergensi.* |
 
 ### 2. Confusion Matrix
 
 | InceptionResnetV1 (VGGFace2) | ConvNeXt-Tiny (ImageNet) |
 | :---: | :---: |
-| ![CM Inception](docs/images/confusion_matrix_inception.png) | ![CM ConvNeXt](docs/images/confusion_matrix_convnext.png) |
+| ![CM Inception](images/confusion_matrix_inception.png) | ![CM ConvNeXt](images/confusion_matrix_convnext.png) |
 | *Prediksi terkonsentrasi di diagonal utama (Benar).* | *Banyak noise di luar diagonal (Salah Prediksi).* |
 
 ---
 
-## 📑 Laporan Klasifikasi Detail
+## Laporan Klasifikasi Detail
 
 Berikut adalah laporan metrik (Precision, Recall, F1-Score) untuk setiap kelas individu dari hasil agregasi *K-Fold*.
 
@@ -132,9 +132,9 @@ Muhammad Riveldo Hermawan Putra       1.00      1.00      1.00         4
 ```
 </details>
 
-### Model 1: InceptionResnetV1 (Akurasi: 98%)
+### Model 1: ConvNext Tiny (Akurasi: 69%)
 <details>
-  <summary><strong>Klik untuk melihat laporan lengkap InceptionResnetV1</strong></summary>
+  <summary><strong>Klik untuk melihat laporan lengkap ConvNext Tiny</strong></summary>
 ```text
 === AGGREGATED CLASSIFICATION REPORT (Semua Folds) ===
                                  precision    recall  f1-score   support
