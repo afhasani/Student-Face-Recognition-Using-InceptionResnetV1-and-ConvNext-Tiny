@@ -129,6 +129,8 @@ Muhammad Riveldo Hermawan Putra       1.00      1.00      1.00         4
                  hayyatul fajri       1.00      1.00      1.00         4
 
                        accuracy                           0.98       283
+                      macro avg       0.98      0.97      0.97       283
+                   weighted avg       0.98      0.98      0.97       283
 ```
 </details>
 
