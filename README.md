@@ -130,7 +130,7 @@ Muhammad Riveldo Hermawan Putra       1.00      1.00      1.00         4
 
                        accuracy                           0.98       283
 ```
-<details>
+</details>
 
 ### Model 1: InceptionResnetV1 (Akurasi: 98%)
 <details>
@@ -214,3 +214,4 @@ Muhammad Riveldo Hermawan Putra       1.00      1.00      1.00         4
                       macro avg       0.69      0.69      0.66       283
                    weighted avg       0.69      0.69      0.67       283
 ```
+</details>
