@@ -2,7 +2,7 @@
 
 Repositori ini mendokumentasikan pengembangan dan evaluasi sistem absensi biometrik menggunakan pendekatan *Few-Shot Learning*. Fokus utama penelitian ini adalah membandingkan kinerja antara model yang dilatih khusus pada domain wajah (**InceptionResnetV1**) dengan arsitektur CNN modern yang dilatih pada domain objek umum (**ConvNeXt-Tiny**).
 
-## 📋 Ringkasan Proyek
+## Ringkasan Proyek
 
 * **Tujuan:** Mengembangkan model pengenalan wajah mahasiswa Deep Learning ITERA yang akurat dengan data latih terbatas (rata-rata 4 citra per individu).
 * **Metode Validasi:** Stratified 4-Fold Cross Validation.
@@ -11,7 +11,7 @@ Repositori ini mendokumentasikan pengembangan dan evaluasi sistem absensi biomet
 
 ---
 
-## 📊 Ringkasan Hasil Evaluasi
+## Ringkasan Hasil Evaluasi
 
 Berdasarkan pengujian menggunakan *Cross Validation*, berikut adalah perbandingan performa rata-rata antar model:
 
@@ -21,7 +21,7 @@ Berdasarkan pengujian menggunakan *Cross Validation*, berikut adalah perbandinga
 | ConvNeXt-Tiny | ImageNet-1K | 69.00% | 0.66 | Mengalami kesulitan generalisasi. |
 
 ### Analisis Kinerja
-Perbedaan performa yang signifikan (~29%) menunjukkan bahwa untuk kasus *dataset kecil (few-shot)*, **domain pengetahuan awal (pre-trained weights)** memiliki dampak yang jauh lebih besar daripada modernitas arsitektur. InceptionResnetV1 yang telah dilatih dengan jutaan wajah (vggface2) sebelumnya mampu beradaptasi dengan cepat, sedangkan ConvNeXt kesulitan mempelajari fitur mikro wajah (seperti jarak mata atau bentuk rahang) hanya dari 200-an gambar.
+Perbedaan performa yang signifikan (~29%) menunjukkan bahwa untuk kasus *dataset kecil (few-shot)*, **domain pengetahuan awal (pre-trained weights)** memiliki dampak yang jauh lebih besar daripada modernitas arsitektur. InceptionResnetV1 yang telah dilatih dengan jutaan wajah (vggface2) mampu beradaptasi dengan cepat, sedangkan ConvNeXt kesulitan mempelajari fitur mikro wajah (seperti jarak mata atau bentuk rahang) hanya dari 200-an gambar.
 
 ---
 
@@ -34,7 +34,7 @@ Bagian ini menampilkan perbandingan kurva pembelajaran dan matriks kebingungan (
 | InceptionResnetV1 (VGGFace2) | ConvNeXt-Tiny (ImageNet) |
 | :---: | :---: |
 | ![Loss Acc Inception](images/learning_curve_inceptionresnetv1.png) | ![Loss Acc ConvNeXt](images/learning_curve_convnext.png) |
-| *Konvergensi cepat dan stabil.* | *Indikasi overfitting atau kesulitan konvergensi.* |
+| *Konvergensi cepat dan stabil.* | *Kesulitan konvergensi.* |
 
 ### 2. Confusion Matrix
 
