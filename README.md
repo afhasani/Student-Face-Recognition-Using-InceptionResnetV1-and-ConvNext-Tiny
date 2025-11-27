@@ -40,7 +40,7 @@ Bagian ini menampilkan perbandingan kurva pembelajaran dan matriks kebingungan (
 
 | InceptionResnetV1 (VGGFace2) | ConvNeXt-Tiny (ImageNet) |
 | :---: | :---: |
-| ![CM Inception](images/confusion_matrix_inception.png) | ![CM ConvNeXt](images/confusion_matrix_convnext.png) |
+| ![CM Inception](images/confusion_matrix_inceptionresnetv1.png) | ![CM ConvNeXt](images/confusion_matrix_convnext.png) |
 | *Prediksi terkonsentrasi di diagonal utama (Benar).* | *Banyak noise di luar diagonal (Salah Prediksi).* |
 
 ---
