@@ -135,6 +135,7 @@ Muhammad Riveldo Hermawan Putra       1.00      1.00      1.00         4
 ### Model 1: ConvNext Tiny (Akurasi: 69%)
 <details>
   <summary><strong>Klik untuk melihat laporan lengkap ConvNext Tiny</strong></summary>
+  
 ```text
 === AGGREGATED CLASSIFICATION REPORT (Semua Folds) ===
                                  precision    recall  f1-score   support
